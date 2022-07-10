@@ -759,13 +759,13 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .footer__main-time-text {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         padding: 0.1rem;
     }
 }
 @media (max-width: 320px) {
     .footer__main-time-text {
-        font-size: 1.3rem;
+        font-size: 0.8rem;
         padding: 0.1rem;
     }
 }
