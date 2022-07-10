@@ -357,7 +357,7 @@ h1 {
 /* Заголовок МЕНЮ */
 .main__menu-title {
     font-size: 3rem;
-    text-align-last: left;
+    text-align: left;
 }
 @media (min-width: 1001px) and (max-width: 1300px) {
     .main__menu-title {
@@ -438,7 +438,7 @@ h1 {
 .main__menu-title-category {
     color: white;
     font-size: 2rem;
-    text-align-last: left;
+    text-align: left;
     padding-bottom: 1rem;
 }
 
@@ -565,7 +565,7 @@ h1 {
 }
 .menu__item-total {
     color: white;
-    text-align-last: left;
+    text-align: left;
     font-size: 1.7rem;   
 }
 
@@ -699,7 +699,7 @@ h1 {
 }
 .footer__main-fio-text {
     color: white;
-    text-align-last: left;
+    text-align: left;
     font-size: 2.2rem;
     font-weight: 600;
     padding: 0.3rem;
@@ -740,32 +740,32 @@ h1 {
 }
 .footer__main-time-text {
     color: white;
-    text-align-last: left;
+    text-align: left;
     font-size: 2rem;
     padding: 0.3rem;
 }
 
 @media (min-width: 1001px) and (max-width: 1300px) {
     .footer__main-time-text {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         padding: 0.3rem;
     }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
     .footer__main-time-text {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
         padding: 0.2rem;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .footer__main-time-text {
-        font-size: 0.8rem;
+        font-size: 1.3rem;
         padding: 0.1rem;
     }
 }
 @media (max-width: 320px) {
     .footer__main-time-text {
-        font-size: 0.7rem;
+        font-size: 1.3rem;
         padding: 0.1rem;
     }
 }
