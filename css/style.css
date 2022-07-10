@@ -84,17 +84,17 @@ h1 {
 }
 @media (min-width: 768px) and (max-width: 1000px) {
     .content__main {
-        padding-bottom: 2rem;
+        padding-bottom: 2.5rem;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .content__main {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 }
 @media (max-width: 320px) {
     .content__main {
-        padding-bottom: 1rem;
+        padding-bottom: 2rem;
     }
 }
 
@@ -207,7 +207,6 @@ h1 {
 
 /* Блок с баннером */
 .main__banner {
-    /* background: gold; */
     margin-top: 11rem;
     margin-bottom: 15rem;
     display: flex;
@@ -681,26 +680,36 @@ h1 {
 .menu__item-total {
     color: white;
     text-align: left;
-    font-size: 1.7rem;   
+    font-size: 1.7rem;
+    border-top: 1px solid #2F1B1B;
+    padding-top: 0.6rem;
 }
 @media (min-width: 1001px) and (max-width: 1300px) {
     .menu__item-total {
         font-size: 1.7rem;
+        padding-top: 0.6rem;
+        border-top: 1px solid #2F1B1B;
     }
 }
 @media (min-width: 768px) and (max-width: 1000px) {
     .menu__item-total {
         font-size: 1.5rem;
+        padding-top: 0.6rem;
+        border-top: 1px solid #2F1B1B;
     }
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .menu__item-total {
         font-size: 1.3rem;
+        padding-top: 0.6rem;
+        border-top: 1px solid #2F1B1B;
     }
 }
 @media (max-width: 320px) {
     .menu__item-total {
         font-size: 1.3rem;
+        padding-top: 0.6rem;
+        border-top: 1px solid #2F1B1B;
     }
 }
 
