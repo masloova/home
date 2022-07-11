@@ -18,6 +18,11 @@ body {
     font-weight: 100;
 }
 
+@font-face {
+	font-family: 'Sangha'; 
+	src: url(../font/Sangha.ttf); 
+}
+
 .bodyFix {
     overflow: hidden;
 }
@@ -144,6 +149,7 @@ h1 {
 .main__title-fio {
     color: white;
     font-size: 1.7rem;
+    font-family: 'Sangha';
 }
 @media (min-width: 1001px) and (max-width: 1300px) {
     .main__title-fio {
@@ -245,6 +251,7 @@ h1 {
     font-weight: 600;
     text-align: left;
     letter-spacing: 2px;
+    font-family: 'Sangha';
 }
 @media (min-width: 1001px) and (max-width: 1300px) {
     .main__banner-text {
@@ -270,7 +277,7 @@ h1 {
 }
 
 .main__banner-text-red {
-    color: red;
+    color: #D62D30;
 }
 
 
@@ -303,7 +310,7 @@ h1 {
 }
 
 .card__title-red {
-    color: red;
+    color: #D62D30;
 }
 
 /* блок с картами */
@@ -376,8 +383,10 @@ h1 {
 /* Заголовок МЕНЮ */
 .main__menu-title {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 200;
     text-align: left;
+    font-family: 'Sangha';
+    color: white;
 }
 @media (min-width: 1001px) and (max-width: 1300px) {
     .main__menu-title {
@@ -480,9 +489,13 @@ h1 {
 .main__menu-title-category {
     color: white;
     font-size: 2rem;
+    font-weight: 400;
     text-align: left;
     margin-bottom: 1rem;
     margin-top: 5rem;
+    background: linear-gradient(240deg, black, #2F1B1B);
+    padding: 0.5rem 0rem 0.5rem 0.5rem;
+    border-radius: 1rem;
 }
 .main__menu-title-category-first {
     margin-top: 1rem !important;
@@ -761,6 +774,7 @@ h1 {
     color: black;
     font-size: 2.2rem;
     font-weight: 600;
+    font-family: 'Sangha';
 }
 
 @media (min-width: 1001px) and (max-width: 1300px) {
@@ -869,6 +883,7 @@ h1 {
     font-size: 2.2rem;
     font-weight: 600;
     padding: 0.3rem;
+    font-family: 'Sangha';
 }
 
 @media (min-width: 1001px) and (max-width: 1300px) {
