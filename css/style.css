@@ -565,7 +565,7 @@ h1 {
 }
 @media (max-width: 450px) {
     .menu__item {
-        flex: 0 0 100%;
+        flex: 0 0 50%;
     }
 }
 
@@ -597,7 +597,7 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 767px) {
     .menu__item-img {
-        height: 250px;
+        height: 200px;
     }
 }
 @media (max-width: 320px) {
