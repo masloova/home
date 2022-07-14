@@ -15,7 +15,7 @@ for (let anchor of anchors) {
 
 const menuItems = document.querySelectorAll('.menu__item');
 const modal = document.querySelector('.modal__wrap');
-const bodyElement = document.getElementById('body');
+const bodyElement = document.querySelector('.wrapper__container');
 
 modal.addEventListener('click', (e) => {
     modal.classList.remove("view-modal");
