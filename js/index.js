@@ -16,9 +16,7 @@ for (let anchor of anchors) {
 const menuItems = document.querySelectorAll('.menu__item');
 const modal = document.querySelector('.modal__wrap');
 
-// const bodyWrap = document.getElementById('body');
-const wrapper = document.querySelector('.wrapper');
-// const bodyElement = document.querySelector('.wrapper__container');
+const wrapper = document.getElementById('body')
 
 modal.addEventListener('click', (e) => {
     modal.classList.remove("view-modal");
@@ -103,8 +101,6 @@ for (let item of menuItems) {
             </div>
         `;
 
-        // bodyElement.classList.add("bodyFixFon");
-        // bodyWrap.classList.add("bodyFixFon");
         wrapper.classList.add("bodyFixFon");
 
         modal.classList.add("view-modal");
@@ -114,8 +110,6 @@ for (let item of menuItems) {
 
         closeIcon.addEventListener('click', () => {
             modal.classList.remove("view-modal");
-            // bodyElement.classList.remove("bodyFixFon");
-            // bodyWrap.classList.remove("bodyFixFon");
             wrapper.classList.remove("bodyFixFon");
         });
 
