@@ -19,7 +19,7 @@ body {
 }
 
 .bodyFixFon {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
 @font-face {
@@ -1079,7 +1079,7 @@ h1 {
     .modal__container {
         padding-top: 2rem;
         width: 90%;
-        height: 70%;
+        height: 50%;
         flex-direction: column;
     }
 }
