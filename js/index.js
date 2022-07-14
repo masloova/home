@@ -15,10 +15,11 @@ for (let anchor of anchors) {
 
 const menuItems = document.querySelectorAll('.menu__item');
 const modal = document.querySelector('.modal__wrap');
+const bodyElement = document.getElementById('body');
 
-// modal.addEventListener('click', (e) => {
-//     modal.classList.remove("view-modal");
-// })
+modal.addEventListener('click', (e) => {
+    modal.classList.remove("view-modal");
+})
 
 
 for (let item of menuItems) {
@@ -99,16 +100,18 @@ for (let item of menuItems) {
             </div>
         `;
 
-        // modal.classList.add("view-modal");
-        // const modalContainer = modal.childNodes[1];
-        // const closeIcon = document.querySelector('.modal__close-icon');
+        bodyElement.classList.add("bodyFixFon");
+        modal.classList.add("view-modal");
+        const modalContainer = modal.childNodes[1];
+        const closeIcon = document.querySelector('.modal__close-icon');
 
-        // closeIcon.addEventListener('click', () => {
-        //     modal.classList.remove("view-modal");
-        // });
+        closeIcon.addEventListener('click', () => {
+            modal.classList.remove("view-modal");
+            bodyElement.classList.remove("bodyFixFon");
+        });
 
-        // modalContainer.addEventListener('click', (e) => {
-        //     e.stopPropagation()
-        // });
+        modalContainer.addEventListener('click', (e) => {
+            e.stopPropagation()
+        });
     })
 }

@@ -18,6 +18,10 @@ body {
     font-weight: 100;
 }
 
+.bodyFixFon {
+    overflow: hidden;
+}
+
 @font-face {
 	font-family: 'Sangha'; 
 	src: url(../font/Sangha.ttf); 
@@ -1075,7 +1079,7 @@ h1 {
     .modal__container {
         padding-top: 2rem;
         width: 90%;
-        height: 70%;
+        height: 80%;
         flex-direction: column;
     }
 }
