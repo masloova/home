@@ -1069,7 +1069,7 @@ h1 {
 }
 @media (min-width: 501px) and (max-width: 860px) {
     .modal__container {
-        padding-top: 1rem;
+        /* padding-top: 1rem; */
         width: 85%;
         height: 40%;
         flex-direction: column;
@@ -1077,9 +1077,9 @@ h1 {
 }
 @media (min-width: 320px) and (max-width: 500px) {
     .modal__container {
-        padding-top: 2rem;
+        /* padding-top: 2rem; */
         width: 90%;
-        height: 50%;
+        height: 70%;
         flex-direction: column;
     }
 }
