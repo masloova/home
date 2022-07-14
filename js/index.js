@@ -103,8 +103,8 @@ for (let item of menuItems) {
             </div>
         `;
 
-        bodyElement.classList.add("bodyFixFon");
-        bodyWrap.classList.add("bodyFixFon");
+        // bodyElement.classList.add("bodyFixFon");
+        // bodyWrap.classList.add("bodyFixFon");
         wrapper.classList.add("bodyFixFon");
 
         modal.classList.add("view-modal");
