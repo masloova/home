@@ -1,4 +1,14 @@
 const anchors = document.querySelectorAll('a[href*="#"]')
+// const topBtn = document.querySelector('.top__btn');
+
+// topBtn.addEventListener('click', (e) => {
+//     e.preventDefault();
+
+//     document.getElementById('#body').scrollIntoView({
+//         behavior: 'smooth',
+//         block: 'start'
+//     })
+// })
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
@@ -16,7 +26,9 @@ for (let anchor of anchors) {
 const menuItems = document.querySelectorAll('.menu__item');
 const modal = document.querySelector('.modal__wrap');
 
-const wrapper = document.querySelector('.wrapper__container')
+const bodyContainer = document.getElementById('body');
+const wrapperContainer = document.querySelector('.wrapper__container');
+const wrapper = document.querySelector('.wrapper');
 
 modal.addEventListener('click', (e) => {
     modal.classList.remove("view-modal");
@@ -101,6 +113,8 @@ for (let item of menuItems) {
             </div>
         `;
 
+        bodyContainer.classList.add("bodyFixFon");
+        wrapperContainer.classList.add("bodyFixFon");
         wrapper.classList.add("bodyFixFon");
 
         modal.classList.add("view-modal");
@@ -109,8 +123,10 @@ for (let item of menuItems) {
         const closeIcon = document.querySelector('.modal__close-icon');
 
         closeIcon.addEventListener('click', () => {
-            modal.classList.remove("view-modal");
+            bodyContainer.classList.remove("bodyFixFon");
+            wrapperContainer.classList.remove("bodyFixFon");
             wrapper.classList.remove("bodyFixFon");
+            modal.classList.remove("view-modal");
         });
 
         modalContainer.addEventListener('click', (e) => {

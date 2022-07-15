@@ -59,6 +59,20 @@ h1 {
     position: relative;
 }
 
+.top__btn {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    margin: 1rem;
+    background: rgba(255, 255, 255, 0.5);
+    z-index: 333;
+    border-radius: 50%;
+    backdrop-filter: blur(4px) contrast(100%);
+    -webkit-backdrop-filter: blur(4px) contrast(100%);
+}
+
 
 
 /* ------------------- CONTENT -------------------  */
@@ -1105,7 +1119,7 @@ h1 {
     width: 220px;
     height: 220px;
     overflow: hidden;
-    box-shadow: 0px 0px 40px 2px grey;
+    /* box-shadow: 0px 0px 40px 2px grey; */
 }
 @media (min-width: 501px) and (max-width: 860px) {
     .circle {
@@ -1118,7 +1132,7 @@ h1 {
     .circle {
         width: 190px;
         height: 190px;
-        margin-top: 1rem;
+        margin-top: 2rem;
     }
 }
 
