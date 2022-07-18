@@ -113,9 +113,9 @@ for (let item of menuItems) {
             </div>
         `;
 
-        bodyContainer.classList.add("bodyFixFon");
-        wrapperContainer.classList.add("bodyFixFon");
-        wrapper.classList.add("bodyFixFon");
+        // bodyContainer.classList.add("bodyFixFon");
+        // wrapperContainer.classList.add("bodyFixFon");
+        // wrapper.classList.add("bodyFixFon");
 
         modal.classList.add("view-modal");
 
@@ -126,6 +126,7 @@ for (let item of menuItems) {
             bodyContainer.classList.remove("bodyFixFon");
             wrapperContainer.classList.remove("bodyFixFon");
             wrapper.classList.remove("bodyFixFon");
+            debugger
             modal.classList.remove("view-modal");
         });
 
