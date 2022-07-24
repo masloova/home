@@ -29,11 +29,22 @@ modal.addEventListener('click', (e) => {
 const topBtn = document.querySelector('.top__btn');
 
 topBtn.addEventListener('click', () => {
-    window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: 'smooth'
-    });
+    document.getElementById('#menu-title').scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+    })
+});
+
+const wrapperContainer = document.querySelector('.wrapper__container');
+
+wrapperContainer.addEventListener('scroll', (e) => {
+    const height = wrapperContainer.scrollTop;
+
+    if (height > 500) {
+        topBtn.classList.add("btn__active");
+    } else {
+        topBtn.classList.remove("btn__active");
+    }
 });
 
 for (let item of menuItems) {
