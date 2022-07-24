@@ -1,20 +1,10 @@
 const anchors = document.querySelectorAll('a[href*="#"]')
-// const topBtn = document.querySelector('.top__btn');
-
-// topBtn.addEventListener('click', (e) => {
-//     e.preventDefault();
-
-//     document.getElementById('#body').scrollIntoView({
-//         behavior: 'smooth',
-//         block: 'start'
-//     })
-// })
 
 for (let anchor of anchors) {
     anchor.addEventListener('click', function (e) {
         e.preventDefault()
-    
-        const blockID = anchor.getAttribute('href')
+
+        const blockID = anchor.getAttribute('href');
 
         document.getElementById(blockID).scrollIntoView({
             behavior: 'smooth',
@@ -25,23 +15,34 @@ for (let anchor of anchors) {
 
 const menuItems = document.querySelectorAll('.menu__item');
 const modal = document.querySelector('.modal__wrap');
+const modalContainer = document.querySelector('.modal__container');
 
 const bodyContainer = document.getElementById('body');
-const wrapperContainer = document.querySelector('.wrapper__container');
-const wrapper = document.querySelector('.wrapper');
 
 modal.addEventListener('click', (e) => {
     modal.classList.remove("view-modal");
-})
 
+    bodyContainer.classList.remove("background__fix");
+    modalContainer.innerHTML = '';
+});
+
+const topBtn = document.querySelector('.top__btn');
+
+topBtn.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+    });
+});
 
 for (let item of menuItems) {
-    item.addEventListener('click', (event) => {
+    item.addEventListener('click', (e) => {
         const img = item.getElementsByTagName("img")[0].getAttribute("src")
         const data = item.childNodes[1].childNodes[3].childNodes;
 
         const title = data[1].innerHTML.trim();
-        const energy = data[3].innerHTML.trim();
+        // const energy = data[3].innerHTML.trim();
         const description = data[5].innerHTML.trim();
         const total = data[7].innerHTML.trim();
 
@@ -113,21 +114,17 @@ for (let item of menuItems) {
             </div>
         `;
 
-        // bodyContainer.classList.add("bodyFixFon");
-        // wrapperContainer.classList.add("bodyFixFon");
-        // wrapper.classList.add("bodyFixFon");
-
         modal.classList.add("view-modal");
+        bodyContainer.classList.add('background__fix');
 
         const modalContainer = modal.childNodes[1];
         const closeIcon = document.querySelector('.modal__close-icon');
 
         closeIcon.addEventListener('click', () => {
-            bodyContainer.classList.remove("bodyFixFon");
-            wrapperContainer.classList.remove("bodyFixFon");
-            wrapper.classList.remove("bodyFixFon");
-            debugger
+            bodyContainer.classList.remove("background__fix");
+
             modal.classList.remove("view-modal");
+            modalContainer.innerHTML = '';
         });
 
         modalContainer.addEventListener('click', (e) => {
