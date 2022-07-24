@@ -325,7 +325,7 @@ const sandwichList = [
         fats: 16,
         // углеводы
         carbohydrates: 189,
-        img: ''
+        img: './sandwich/1.png'
     },
 ];
 
